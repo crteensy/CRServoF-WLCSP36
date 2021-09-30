@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 25_CRServoF_WLCSP36)(type KiCad)(uri ${KIPRJMOD}/mod/25_CRServoF_WLCSP36.pretty)(options "")(descr ""))
+)
