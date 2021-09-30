@@ -20,7 +20,7 @@ Features:
 
 It is powered by an external BEC (usually the ESC should bring one). There is no regulator on board that will handle anything above 5V. Of course it can run off a 1S LiIon, LiPo or similar battery.
 
-* You might ask why I used this package. It's simple: I didn't have any other at hand, and couldn't order any similar STM32 in a more friendly package. It can still be soldered at home, though!
+\*) You might ask why I used this package. It's simple: I didn't have any other at hand, and couldn't order any similar STM32 in a more friendly package. It can still be soldered at home, though!
 
 ## Layout
 
