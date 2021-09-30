@@ -50,9 +50,9 @@ MCU Pinout and extra pins used to route the design:
 | UART1 Rx | C1 (PA10) |   |
 | UART2 Tx | E4 (PA2) | F4 (PA7) | CRSF header, 1k series resistor
 | UART2 Rx | F5 (PA3) |   | CRSF header
-| ADC      | F6 (PA0) |   | ADC_IN0
-| VDD,VDDA | A5, E1, E5 | E6 (PB5)
-| VSS, VSSA | F1, D6 |   | 10k/1k divider and filter cap
+| ADC      | F6 (PA0) |   | ADC_IN0, 10k/1k divider and filter cap
+| VDD,VDDA | A5, E1, E5 | E6 (PB5) | supply
+| VSS, VSSA | F1, D6 |   | GND
 
 The boot loader UART (UART2) on PA14/PA15 can be accessed through a dedicated set of pads on the bottom. One of them (UART2_Tx) is shared with a servo output, but that doesn't hurt during programming.
 
