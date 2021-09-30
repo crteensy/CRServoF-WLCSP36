@@ -25,10 +25,11 @@ It is powered by an external BEC (usually the ESC should bring one). There is no
 ## Layout
 
 The layout is simple and doesn't require special PCB fabrication technology:
-- min track width / clearance: 0.1 mm; it might be possible to relax that a bit
-- standard vias, 0.2 mm drill / 0.5 mm outer diameter, no tenting or similar extra
+- min track width / clearance: 0.1 mm
+- standard vias, 0.2 mm drill / 0.5 mm outer diameter, no tenting or similar extras
 - 4 layers
 - single sided assembly, 0402 or larger passives
+
 In order to route signals that do not come from pins along the perimeter, multiple pins are shorted in order to reach the perimeter. Only one of these pins may drive it at any given time.
 
 MCU Pinout and extra pins used to route the design:
@@ -53,6 +54,6 @@ MCU Pinout and extra pins used to route the design:
 | VDD,VDDA | A5, E1, E5 | E6 (PB5)
 | VSS, VSSA | F1, D6 |   | 10k/1k divider and filter cap
 
-The boot loader UART on PA14/PA15 can be accessed through a dedicated set of pads on the bottom. One of them (UART2_Tx) is shared with a servo output, but that doesn't hurt during programming.
+The boot loader UART (UART2) on PA14/PA15 can be accessed through a dedicated set of pads on the bottom. One of them (UART2_Tx) is shared with a servo output, but that doesn't hurt during programming.
 
-If the battery voltage (to be measured with the ADC) is accidentally connected to a servo output, this will probably not hurt because all PWM outputs have a 1k series resistor. Unless it's connected in reverse. That would be bad, even on the VBat header.
+If the battery voltage (to be measured with the ADC) is accidentally connected to a servo output, this will probably not cause damage because all PWM outputs have a 1k series resistor. Unless it's connected in reverse. That would be bad, even on the VBat header.
