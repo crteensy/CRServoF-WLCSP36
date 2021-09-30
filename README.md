@@ -38,12 +38,12 @@ MCU Pinout and extra pins used to route the design:
 |---|---|---|---|
 | NRST     | D5 | C6 (PC15) |
 | BOOT0    | B4 | B5 (PF0), A6 (PC13) | 10k Pull-down
-| PWM x    | F3 (PB0) |   | TIM3_CH3, 1k series resistor
-| PWM x    | F2 (PB1) |   | TIM3_CH4, 1k series resistor
-| PWM x    | B3 (PB3) | A4 (PB7) | TIM2_CH2, 1k series resistor
-| PWM x    | A3 (PB4) |   |  TIM3_CH1, 1k series resistor
-| PWM x    | A2 (PA15) |   | TIM2_CH1, 1k series resistor (also boot loader UART Rx)
-| PWM x    | D1 (PA9) |   | TIM1_CH2, 1k series resistor
+| PWM 1    | A2 (PA15) |   | TIM2_CH1, 1k series resistor (also boot loader UART Rx)
+| PWM 2    | A3 (PB4) |   |  TIM3_CH1, 1k series resistor
+| PWM 3    | B3 (PB3) | A4 (PB7) | TIM2_CH2, 1k series resistor
+| PWM 4    | F3 (PB0) |   | TIM3_CH3, 1k series resistor
+| PWM 5    | D1 (PA9) |   | TIM1_CH2, 1k series resistor
+| PWM 6    | F2 (PB1) |   | TIM3_CH4, 1k series resistor
 | SWCLK    | B2 (PA14) | A1 (PA12) | (also boot loader Tx, 1k series resistor)
 | SWDIO    | B1 (PA13) |   |
 | UART1 Tx | C4 (PB6) | C5 (PF1), B6 (PC14)  | 1k series resistor
